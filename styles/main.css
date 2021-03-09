@@ -57,6 +57,7 @@ main {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  position: relative;
 }
 .button-container .button_1::after {
   content: "";
@@ -99,6 +100,7 @@ main {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  position: relative;
 }
 .button-container .button_2::after {
   content: "";
@@ -141,6 +143,7 @@ main {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  position: relative;
 }
 .button-container .button_2::after {
   content: "";
@@ -183,6 +186,7 @@ main {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  position: relative;
 }
 .button-container .button_3::after {
   content: "";
@@ -225,6 +229,7 @@ main {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  position: relative;
 }
 .button-container .button_4::after {
   content: "";
@@ -267,6 +272,7 @@ main {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  position: relative;
 }
 .button-container .button_5::after {
   content: "";
