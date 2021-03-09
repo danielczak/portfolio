@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap");
+
+// button1
+
+$button-color-1: red;
+$button-box-shadow-1: 5px 5px 5px #364934, -5px -5px 10px #81af6f;
+$button-bg-color-1: rgb(76, 114, 51);
+$box-shadow-after-1: inset 20px 20px 20px rgb(74, 82, 56),
+  inset -5px -5px 8px #627762;
+
+// button2
+
+$button-color-2: lime;
+$button-box-shadow-2: 5px 5px 5px #6a5c9e, -5px -5px 10px #fee7ff;
+$button-bg-color-2: rgb(187, 158, 206);
+$box-shadow-after-2: inset 20px 20px 20px rgb(157, 139, 179),
+  inset -5px -5px 8px #ddcedd;
+
+// button3
+
+$button-color-3: cornflowerblue;
+$button-box-shadow-3: 5px 5px 5px #344449, -5px -5px 10px #6f83af;
+$button-bg-color-3: rgb(51, 91, 114);
+$box-shadow-after-3: inset 20px 20px 20px rgb(56, 72, 82),
+  inset -5px -5px 8px #626277;
+
+// button4
+
+$button-color-4: yellow;
+$button-box-shadow-4: 5px 5px 5px #a78d39, -5px -5px 10px #fee7ff;
+$button-bg-color-4: rgb(235, 206, 76);
+$box-shadow-after-4: inset 20px 20px 20px rgb(179, 176, 139),
+  inset -5px -5px 8px #dddbce;
+
+// button5
+
+$button-color-5: pink;
+$button-box-shadow-5: 5px 5px 5px #a73939, -5px -5px 10px #eca5a5;
+$button-bg-color-5: rgb(235, 76, 76);
+$box-shadow-after-5: inset 20px 20px 20px rgb(179, 139, 151),
+  inset -5px -5px 8px #ddced1;

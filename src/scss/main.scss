@@ -1,0 +1,45 @@
+@forward './variables.scss';
+@forward './layout.scss';
+
+html {
+  width: 100vw;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  // outline: auto;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  font-size: 1.6rem;
+ 
+}
+
+nav,
+main {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+main {
+  font-size: 0.9rem;
+  color: rgb(102, 102, 102);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 0;
+}
+
+a, a:hover, a:visited, a:active { 
+  color: rgb(102, 102, 102);
+}
+
+// This is where you can import other stylesheets or write your scss code
+@import "../../node_modules/bootstrap/scss/bootstrap";

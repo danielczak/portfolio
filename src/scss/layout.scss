@@ -1,0 +1,451 @@
+@use './variables.scss' as var;
+@use './mixins.scss' as mix;
+
+// general-------------------------------------------
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+  background-color: rgb(78, 78, 78);
+  width: 100vw;
+}
+
+#border-black {
+  padding: 0;
+}
+
+// added new background to content pages
+
+.filled-container {
+  position: relative;
+  min-height: 100vh;
+  // background-color: var.$button-bg-color-1;
+  width: 100vw;
+  background-color: whitesmoke;
+}
+
+main {
+  padding-top: 240px;
+}
+
+// button--------------------------1------------------
+
+.button-container {
+  margin: 0;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.button-container {
+  .back-button_1 {
+    @include mix.button-back(var.$button-bg-color-1);
+  }
+  .button_1 {
+    @include mix.button(
+      var.$button-color-1,
+      var.$button-box-shadow-1,
+      var.$button-bg-color-1
+    );
+  }
+  .button_1::after {
+    @include mix.button-after(var.$box-shadow-after-1);
+  }
+  .button_1:hover {
+    box-shadow: none;
+  }
+  .button_1:hover::after {
+    opacity: 1;
+  }
+}
+
+// button--------------------------2------------------
+
+.button-container {
+  .back-button_2 {
+    @include mix.button-back(var.$button-bg-color-2);
+  }
+  .button_2 {
+    @include mix.button(
+      var.$button-color-2,
+      var.$button-box-shadow-2,
+      var.$button-bg-color-2
+    );
+  }
+  .button_2::after {
+    @include mix.button-after(var.$box-shadow-after-2);
+  }
+  .button_2:hover {
+    box-shadow: none;
+  }
+  .button_2:hover::after {
+    opacity: 1;
+  }
+}
+
+// button--------------------------2------------------
+
+.button-container {
+  .back-button_2 {
+    @include mix.button-back(var.$button-bg-color-2);
+  }
+  .button_2 {
+    @include mix.button(
+      var.$button-color-2,
+      var.$button-box-shadow-2,
+      var.$button-bg-color-2
+    );
+  }
+  .button_2::after {
+    @include mix.button-after(var.$box-shadow-after-2);
+  }
+  .button_2:hover {
+    box-shadow: none;
+  }
+  .button_2:hover::after {
+    opacity: 1;
+  }
+}
+
+// button--------------------------3------------------
+
+.button-container {
+  .back-button_3 {
+    @include mix.button-back(var.$button-bg-color-3);
+  }
+  .button_3 {
+    @include mix.button(
+      var.$button-color-3,
+      var.$button-box-shadow-3,
+      var.$button-bg-color-3
+    );
+  }
+  .button_3::after {
+    @include mix.button-after(var.$box-shadow-after-3);
+  }
+  .button_3:hover {
+    box-shadow: none;
+  }
+  .button_3:hover::after {
+    opacity: 1;
+  }
+}
+
+// button--------------------------4------------------
+
+.button-container {
+  .back-button_4 {
+    @include mix.button-back(var.$button-bg-color-4);
+  }
+  .button_4 {
+    @include mix.button(
+      var.$button-color-4,
+      var.$button-box-shadow-4,
+      var.$button-bg-color-4
+    );
+  }
+  .button_4::after {
+    @include mix.button-after(var.$box-shadow-after-4);
+  }
+  .button_4:hover {
+    box-shadow: none;
+  }
+  .button_4:hover::after {
+    opacity: 1;
+  }
+}
+
+// button--------------------------5------------------
+
+.button-container {
+  .back-button_5 {
+    @include mix.button-back(var.$button-bg-color-5);
+  }
+  .button_5 {
+    @include mix.button(
+      var.$button-color-5,
+      var.$button-box-shadow-5,
+      var.$button-bg-color-5
+    );
+  }
+  .button_5::after {
+    @include mix.button-after(var.$box-shadow-after-5);
+  }
+  .button_5:hover {
+    box-shadow: none;
+  }
+  .button_5:hover::after {
+    opacity: 1;
+  }
+}
+
+// nav-small--------------------------
+
+.nav-small {
+  display: none;
+  margin: 0;
+}
+
+.nav-s-1 {
+  background-color: var.$button-bg-color-1;
+  color: var.$button-color-1;
+  padding-left: 2rem;
+}
+
+.nav-s-2 {
+  background-color: var.$button-bg-color-2;
+  color: var.$button-color-2;
+  padding-left: 2rem;
+}
+
+.nav-s-3 {
+  background-color: var.$button-bg-color-3;
+  color: var.$button-color-3;
+  padding-left: 2rem;
+}
+
+.nav-s-4 {
+  background-color: var.$button-bg-color-4;
+  color: var.$button-color-4;
+  padding-left: 2rem;
+}
+
+.nav-s-5 {
+  background-color: var.$button-bg-color-5;
+  color: var.$button-color-5;
+  padding-left: 2rem;
+}
+
+// media__________big------------------------------
+
+.home-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-bottom: 1px solid rgb(182, 181, 181);
+  border-radius: 0px 0px 10px 10px;
+  position: fixed;
+  top: 0px;
+  height: 1.5rem;
+  z-index: 3;
+  background-color: white;
+  color: rgb(255, 143, 39);
+}
+
+// hero img-----------------------
+
+.hero-img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-img img {
+  width: 100%;
+  height: auto;
+}
+
+.m-t-1-5 {
+  margin-top: 1.5rem;
+}
+
+// hero img-----------mobile------------
+
+.hero-img-mobile {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+.hero-img-mobile img {
+  width: 100%;
+  height: auto;
+}
+
+// media____-----------small-------------------
+
+@media only screen and (max-width: 768px) {
+  // .page-container {
+  //   min-height: 100%;
+  // }
+
+  .button-container {
+    display: none;
+  }
+
+  body {
+    background-color: var.$button-bg-color-1;
+  }
+
+  header {
+    margin-top: 0;
+  }
+
+  .nav-s-1 {
+    padding-top: 1.5rem;
+  }
+
+  .nav-small {
+    display: block;
+  }
+
+  main {
+    padding-top: 0;
+  }
+
+  .hero-img-mobile {
+    display: block;
+  }
+
+  .hero-img {
+    display: none;
+  }
+}
+
+// Footer----------------------------------
+
+.content-wrap {
+  padding-bottom: 6.5rem;
+}
+
+footer {
+  // font-family: "Libre Baskerville", serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.5rem;
+  width: 100%;
+  border-top: 1px solid rgb(255, 255, 255);
+  border-radius: 10px 10px 0px 0px;
+  height: 6.5rem;
+  background-color: rgb(168, 166, 166);
+  color: black;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  box-shadow: inset 20px 20px 40px rgb(138, 137, 137),
+    inset -5px -5px 30px #ddcedd;
+}
+
+.footer-align {
+  width: 100%;
+  height: fit-content;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#clubhouse {
+  color: rgb(68, 68, 68);
+}
+#e_mail {
+  color: yellow;
+}
+
+#instagram {
+  color: pink;
+}
+
+#github {
+  color: lime;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+// bootstrap overwrite -------------------------
+
+#padding-1-5 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.pm-0 {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 10vw 1fr 1fr;
+  grid-template-rows: minmax(0, 1.5rem);
+  
+  width: 70vw;
+  margin: 0 auto;
+  gap: 0;
+  
+
+  
+}
+
+.grid-item-1 {
+  display: none;
+}
+
+
+.grid-item-3:hover, .grid-item-1{
+ 
+  display: block;
+}
+
+.projects {
+  padding-top: 1.5rem;
+  width:fit-content;
+  margin: 0 auto;
+  
+}
+
+
+.text-hover {
+  position: relative;
+}
+
+.img-hover {
+  display: none;
+  position: absolute;
+  left:  -200px;
+  max-width:500px; 
+  margin-left: 40px;
+  border-radius: 15px;
+  z-index: 2;
+}
+
+.img-hover-bttm {
+  display: none;
+  position: absolute;
+  left:  -200px;
+  max-width:500px; 
+  margin-left: 40px;
+  border-radius: 15px;
+  z-index: 2;
+  top: -135px;
+}
+
+
+
+.text-hover:hover .img-hover {
+  display: inline-block;
+}
+
+.text-hover:hover .img-hover-bttm {
+  display: inline-block;
+}
+
+
